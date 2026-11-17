@@ -15,6 +15,7 @@
     --text:#e8e8e8;
     --muted:#8a8a8a;
     --red:#ff1f2d;
+    --yellow:#ffd60a;
     --line:#242424;
     --cut:34px;
     --sq:clamp(260px, 42vh, 460px);
@@ -122,6 +123,10 @@
   .go.alt:hover{color:#000}
   .go.alt:hover::before{background:#fff}
 
+  .go.support{background:var(--yellow);color:var(--yellow)}
+  .go.support:hover{color:#000}
+  .go.support:hover::before{background:var(--yellow)}
+
   /* ENTRANCE */
   @keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
   .rz{opacity:0}
@@ -167,6 +172,16 @@
         <path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/>
       </svg></span>
       <span>X</span>
+      <span class="arrow">&rsaquo;</span>
+    </a>
+
+    <a class="go support rz" data-rz="1180" href="https://buymeacoffee.com/vesperdigital" target="_blank" rel="noopener">
+      <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M17 10h1.6a2.4 2.4 0 0 1 0 4.8H17" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M8 2.6v2.2M12 2.6v2.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg></span>
+      <span>Support</span>
       <span class="arrow">&rsaquo;</span>
     </a>
   </nav>
